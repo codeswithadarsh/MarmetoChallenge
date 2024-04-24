@@ -449,6 +449,9 @@ input {
 .product_vendor {
   margin-top: 40px;
 }
+.product_quantity{
+  margin: 10px;
+}
 
 }
 
