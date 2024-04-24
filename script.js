@@ -158,9 +158,11 @@
   });
 
   addCartBtn.addEventListener("click", (e) => {
+
+    const currentQuantity = quantityValue;
     document.querySelector(
       ".cart_final"
-    ).textContent = `${productData.title} with Color ${finalCartValue["color"]} and Size ${finalCartValue["size"]} added to cart`;
+    ).textContent = `${productData.title} with Color ${finalCartValue["color"]}, Size ${finalCartValue["size"]}, and Quantity ${currentQuantity} added to cart`;
     document.querySelector(".cart_final").style.display = "block";
     setTimeout(() => {
       document.querySelector(".cart_final").style.display = "none";
