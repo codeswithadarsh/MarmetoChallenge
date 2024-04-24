@@ -1,7 +1,4 @@
 (async function () {
-
- 
-
   const response = await fetch(
     "https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json?v=1701948448"
   );
@@ -82,29 +79,29 @@
 
   function imageFunc() {
     let finalElement = '';
-    // Add your own images
+
     myImages.forEach((url) => {
       finalElement += `<img src="${url}" alt="myImage" />`;
     });
     imgContainer.innerHTML = finalElement;
-  
-    // Add event listeners to each image for the click event
+
+
     const images = imgContainer.querySelectorAll('img');
     images.forEach(image => {
-      image.addEventListener('click', function() {
+      image.addEventListener('click', function () {
         const mainImage = document.querySelector('.main_section img');
-        mainImage.src = this.src; // Set the main image source to the clicked image source
-  
-        // Remove active class from all images
+        mainImage.src = this.src;
+
+
         images.forEach(img => img.classList.remove('active-image'));
-  
-        // Add active class to the clicked image
+
+
         this.classList.add('active-image');
       });
     });
   }
-  
-  
+
+
 
   // function imageFunc() {
   //   let finalElement = ``;
@@ -116,7 +113,7 @@
   //   });
   //   imgContainer.innerHTML = finalElement;
   // }
-  
+
 
   function updateQuantity(newValue) {
     quantityValue = newValue;

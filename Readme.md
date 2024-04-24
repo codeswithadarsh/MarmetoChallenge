@@ -1,19 +1,46 @@
-# Coding Assessment L-2 Code Submission Process with Boilerplate
+# Product Detail Page
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+This project involves creating a responsive product detail page that showcases a product with multiple attributes and options such as size, color, and quantity. The page allows users to select product variants, add items to their cart, and view detailed information about their selections.
 
-## Getting Started
+### Deployed Link: 
+https://marmeto-challenge.vercel.app/
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+## Features
 
-2. **Navigate to Project Directory:**
+- **Responsive Layout**: The design adapts to mobile, tablet, and desktop viewports.
+- **Product Image Display**: Features a main product image with thumbnail images for preview. Users can click on any thumbnail to update the main product image, enhancing the interactive experience.
+- **Interactive Product Variants**:
+  - **Color Selector**: Allows users to choose from available colors.
+  - **Size Selector**: Users can select from available sizes.
+- **Quantity Selector**: Enables quantity adjustments before adding to cart.
+- **Add to Cart Functionality**:
+  - Interactive add-to-cart process where users can select variants, set quantities, and add products to their cart.
+  - A dynamic message display after items are added to the cart, summarizing the selection including size, color, and quantity.
+- **Product Description**: Displays a detailed description of the product.
+- **User Interaction for Image Viewing**: Users can click on thumbnail images to view them as the main product image, allowing for a closer look at different aspects of the product.
 
-3. **Explore the Structure:**
+**In Short:** 
+· Product Image
+. Thumbnail images
+. Product vendor
+. Product title
+. Price
+. Compare at price Eg : 199
+· calculate % off Using js
+. Color variant selector
+. Size selector
+. quantity selector
+. Create Add to cart button
+. Add to cart button message
+. Description
+. On change of variant we need to save the selected variants data and
+then
+. On click of add to cart button Add to cart message will be visible with
+the added product's details as shown in design.
+
+## Technologies Used
+
+ **Explore the Structure:**
 Take a moment to review the project structure:
 
         project-root/
@@ -25,43 +52,14 @@ Take a moment to review the project structure:
 - `style.css`: CSS file for styling.
 - `script.js`: JavaScript file for scripting logic.
 - `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
 
-## Development and Testing
+## Setup and Local Development
 
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/codeswithadarsh/MarmetoChallenge.git
 
 
----
-## Submission Guidelines
+### Additional Details
 
-### Option 1: GitHub Repository
-
-1. Create a new public repository on GitHub.
-2. Upload your project files (index.html, style.css, script.js) to the repository.
-3. Write a brief description of your project in the README.md file.
-4. Share the repository URL with us.
-
-### Option 2: ZIP File on Google Drive
-
-1. Create a ZIP file of your entire project.
-2. Upload the ZIP file to your Google Drive.
-3. Share the public link to the ZIP file via email.
-
-## Hosting (Bonus)
-You can earn bonus points by hosting your project on a free hosting platform such as GitHub Pages or Netlify.
-
-## Important Notes
-
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Feel free to reach out to invigilator at [9651223950]() if you have any questions. Good luck! We look forward to reviewing your submission.
+**Enhanced Image Viewing**: The explanation adds that users can click on thumbnail images to change the main displayed product image. This is a crucial detail for enhancing user experience and interactivity, giving users better control over viewing product details.
